@@ -15,6 +15,7 @@
 		FEB2D7E42302F1FE00F98625 /* viewFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2D7E32302F1FE00F98625 /* viewFinderTests.swift */; };
 		FEB2D7EF2302F1FE00F98625 /* viewFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2D7EE2302F1FE00F98625 /* viewFinderUITests.swift */; };
 		FEB2D7FF2302FD7700F98625 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2D7FE2302FD7700F98625 /* AddPhotoViewController.swift */; };
+		FEB2D8052303347200F98625 /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2D8042303347200F98625 /* PhotoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,8 @@
 		FEB2D7EA2302F1FE00F98625 /* viewFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = viewFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB2D7EE2302F1FE00F98625 /* viewFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewFinderUITests.swift; sourceTree = "<group>"; };
 		FEB2D7F02302F1FE00F98625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FEB2D7FE2302FD7700F98625 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddPhotoViewController.swift; path = ../AddPhotoViewController.swift; sourceTree = "<group>"; };
+		FEB2D7FE2302FD7700F98625 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
+		FEB2D8042303347200F98625 /* PhotoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,6 @@
 		FEB2D7BF2302F1FC00F98625 = {
 			isa = PBXGroup;
 			children = (
-				FEB2D7FE2302FD7700F98625 /* AddPhotoViewController.swift */,
 				FEB2D7CA2302F1FC00F98625 /* viewFinder */,
 				FEB2D7E22302F1FE00F98625 /* viewFinderTests */,
 				FEB2D7ED2302F1FE00F98625 /* viewFinderUITests */,
@@ -100,8 +101,10 @@
 		FEB2D7CA2302F1FC00F98625 /* viewFinder */ = {
 			isa = PBXGroup;
 			children = (
+				FEB2D8042303347200F98625 /* PhotoTableViewController.swift */,
 				FEB2D7CB2302F1FC00F98625 /* AppDelegate.swift */,
 				FEB2D7CF2302F1FC00F98625 /* Main.storyboard */,
+				FEB2D7FE2302FD7700F98625 /* AddPhotoViewController.swift */,
 				FEB2D7D52302F1FE00F98625 /* Assets.xcassets */,
 				FEB2D7D72302F1FE00F98625 /* LaunchScreen.storyboard */,
 				FEB2D7DA2302F1FE00F98625 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				FEB2D7D42302F1FC00F98625 /* viewFinder.xcdatamodeld in Sources */,
 				FEB2D7FF2302FD7700F98625 /* AddPhotoViewController.swift in Sources */,
+				FEB2D8052303347200F98625 /* PhotoTableViewController.swift in Sources */,
 				FEB2D7CC2302F1FC00F98625 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
