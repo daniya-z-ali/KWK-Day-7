@@ -49,7 +49,7 @@
         <!--Add New Photo-->
         <scene sceneID="jue-iT-2EL">
             <objects>
-                <viewController id="VO2-e3-zPn" sceneMemberID="viewController">
+                <viewController id="VO2-e3-zPn" customClass="AddPhotoViewController" customModule="viewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nah-aA-R7U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
