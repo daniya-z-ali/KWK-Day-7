@@ -26,6 +26,17 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
     }
+    @IBOutlet weak var displayImage: UIImageView!
+    
+    func imagePickerController (_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            displayImage.image = selectedImage
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
+        // update our photo with the selected photo
+        // go to back to our viewController so the user can see the update
+    }
 }
     
 
