@@ -37,6 +37,19 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         // update our photo with the selected photo
         // go to back to our viewController so the user can see the update
     }
+    @IBOutlet weak var captionText: UITextField!
+    
+    @IBAction func savePhotoTapped(_ sender: UIButton) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
+            photoToSave.caption = captionText.text
+            if let userImage = displayImage.image{
+            if let userImageData = userImage.pngData() {
+                    photoToSave.imageData = userImageData
+                }
+            }
+        }
+    }
 }
     
 
